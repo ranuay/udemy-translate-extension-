@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "buat translate udemy",
+  "version": "1.0",
+  "description": "biar ada bahasa indonesianya",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "*://*.udemy.com/*",
+    "*://translate.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.udemy.com/course/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

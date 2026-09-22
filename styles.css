@@ -1,0 +1,13 @@
+/* Style untuk teks terjemahan */
+.indo-sub-text {
+  display: block;           /* Biar pindah ke baris baru di bawah Inggris */
+  color: #f1c40f;           /* Warna Kuning biar kontras */
+  font-size: 18px;          /* Ukuran font */
+  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang hitam transparan */
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+}
