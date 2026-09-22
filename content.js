@@ -22,7 +22,7 @@ async function translateToIndo(text) {
 
 // 2. Fungsi Utama untuk Memproses Subtitle
 async function processSubtitle() {
-    // UPDATE: Kita pakai selector 'data-purpose' sesuai screenshot kamu
+    // pakai selector 'data-purpose'
     const subtitleElement = document.querySelector('[data-purpose="captions-cue-text"]');
 
     if (subtitleElement) {
@@ -40,7 +40,7 @@ async function processSubtitle() {
             oldTranslations.forEach(el => el.remove());
 
             // Kirim ke Google Translate
-            // NOTE: Kita ambil 'firstChild.textContent' supaya yang diambil cuma teks Inggrisnya, 
+            // NOTE: ambil 'firstChild.textContent' supaya yang diambil cuma teks Inggrisnya
             // bukan teks Inggris + teks Indo yang sudah ada (kalau ada bug)
             const textToTranslate = subtitleElement.firstChild ? subtitleElement.firstChild.textContent : currentText;
             
